@@ -1,0 +1,26 @@
+
+1、os.Stat(path)
+
+2、filepath.Join(jreDir, "lib", "*")
+
+3、os.PathListSeparator
+
+4、strings.Contains(path, pathListSeparator)
+
+5、strings.HasSuffix(path, "*")
+
+6、strings.Split(pathList, pathListSeparator)
+
+7、strings.Join(strs, pathListSeparator)
+
+8、filepath.Abs(path)
+
+9、ioutil.ReadFile(filename)
+
+10、walkFn := func(path string, info os.FileInfo, err error) error {
+   		 。。。。
+   	 }
+   	filepath.Walk(baseDir, walkFn)
+
+11、flag.BoolVar(&cmd.versionFlag, "version", false, "print version and exit")
+   	flag.StringVar(&cmd.cpOption, "classpath", "", "classpath")

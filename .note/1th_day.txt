@@ -1,0 +1,27 @@
+1、go有关对象的的创建
+    &Cmd{}
+
+2、go的flag包
+    获取指定的参数值，基于os包实现
+    两种使用方式
+
+3、java的类路径
+    启动类路径   bootstrap classpath     对应jre/lib目录，java标准库（大部分在rt.jar里）位于该路径，可以通过Xbootclasspath参数进行修改
+    扩展类路径   extension classpath     对应jre/lib/ext目录，使用java扩展机制的类位于该路径下
+    用户类路径   user classpath          自己实现的类，以及第三方库位于该路径下，默认为当前路径下"."，可以通过参数cp进行改变
+
+4、对类路径设计为三种形式？
+
+5、数组的几种创建方式
+    \ compositeEntry := []Entry{}
+    \ strs := make([]string, len(self))
+    在能确定数组大小以及不频繁调整时，使用数组的方式
+
+6、go project的编译
+    本地的go 目录如下：
+        bin 编译后的可执行程序
+        src 源代码
+        pkg 扩展包
+
+     步骤一： go install jvmgo/ch02 --> 是源代码的位置
+     步骤二： 之后在bin中可以看到可以执行的文件

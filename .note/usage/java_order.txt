@@ -1,0 +1,4 @@
+java [-option] class [args]
+java [-options] -jar jarfile [args]
+java [-options] class [args]
+java [-options] -jar jarfile [args]
