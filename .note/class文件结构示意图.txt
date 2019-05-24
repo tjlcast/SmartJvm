@@ -20,6 +20,7 @@ ClassFile {
     attrubute_info      attributes[attribute_count]
 }
 
+===================
 
 field_info {
     u2              access_flags;
@@ -29,8 +30,34 @@ field_info {
     attribute_info  attributes[attributes_count];
 }
 
+===================
+
 cp_info {
     u1      tag;
     u1      info[];
 }
 
+cp_float {
+    u1  tag;
+    u4  bytes;
+}
+
+cp_double {
+    u1  tag;
+    u4  high_bytes;
+    u4  low_bytes;
+}
+
+cp_name_type {
+    u1  tag;
+    u2  name_index;
+    u2  descriptor_index;
+}
+
+===================
+
+attribute_info {
+    u2  attribute_name_index;
+    u4  attribute_length;
+    u1  info[attribute_length];
+}
